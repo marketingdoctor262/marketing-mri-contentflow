@@ -1,0 +1,73 @@
+/* 라이트 모드 — 대시보드 템플릿: 연한 캔버스 + 흰 카드 + 소프트 섀도우 */
+:root {
+  --bg-page: #f0f2f7;
+  --bg: var(--bg-page);
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --panel: #f7f8fc;
+  --panel-hover: #eef1f8;
+  --sidebar-bg: #161a22;
+  --sidebar-text: #f1f5f9;
+  --sidebar-muted: #94a3b8;
+  --sidebar-line: rgba(255, 255, 255, .08);
+  --sidebar-active: rgba(220, 38, 38, .22);
+  --line: #e8ecf4;
+  --line-light: #f1f4fa;
+  --text: #0f172a;
+  --text-secondary: #334155;
+  --muted: #64748b;
+  --brand: #dc2626;
+  --brand-light: rgba(220, 38, 38, .08);
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, .08);
+  --ok: #16a34a;
+  --warn: #d97706;
+  --bad: #dc2626;
+  --input-bg: #ffffff;
+  --bar-bg: #e2e8f0;
+  --soft-bg: #f1f5f9;
+  --divider: rgba(15, 23, 42, .06);
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, .04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, .06), 0 1px 2px rgba(15, 23, 42, .04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, .07), 0 2px 4px rgba(15, 23, 42, .04);
+  --shadow-lg: 0 12px 40px rgba(15, 23, 42, .1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+}
+
+/* 다크 모드 */
+[data-theme="dark"] {
+  --bg-page: #0c0e14;
+  --bg: var(--bg-page);
+  --surface: #141824;
+  --surface-elevated: #1a1f2e;
+  --panel: #12151f;
+  --panel-hover: #1a2030;
+  --sidebar-bg: #0a0c12;
+  --sidebar-text: #e2e8f0;
+  --sidebar-muted: #94a3b8;
+  --sidebar-line: rgba(255, 255, 255, .06);
+  --sidebar-active: rgba(239, 68, 68, .18);
+  --line: #252a3a;
+  --line-light: #1e2433;
+  --text: #e8eaf0;
+  --text-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --brand: #ef4444;
+  --brand-light: rgba(239, 68, 68, .1);
+  --accent: #3b82f6;
+  --accent-soft: rgba(59, 130, 246, .12);
+  --ok: #22c55e;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --input-bg: #0f1219;
+  --bar-bg: #252a3a;
+  --soft-bg: rgba(255, 255, 255, .04);
+  --divider: rgba(255, 255, 255, .06);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .2);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, .25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, .35);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, .45);
+}
