@@ -29,10 +29,10 @@ export function renderChannelBars(groups = []) {
           .join("")}
       </div>
       <div class="channel-legend">
-        <span class="channel-legend-item"><span class="channel-dot" style="background:#dc2626"></span>위험 0~24</span>
-        <span class="channel-legend-item"><span class="channel-dot" style="background:#ea580c"></span>취약 25~49</span>
-        <span class="channel-legend-item"><span class="channel-dot" style="background:#d97706"></span>보통 50~74</span>
-        <span class="channel-legend-item"><span class="channel-dot" style="background:#16a34a"></span>양호 75~100</span>
+        <span class="channel-legend-item"><span class="channel-dot" style="background:#be123c"></span>위험 0~24</span>
+        <span class="channel-legend-item"><span class="channel-dot" style="background:#ec4899"></span>취약 25~49</span>
+        <span class="channel-legend-item"><span class="channel-dot" style="background:#8b5cf6"></span>보통 50~74</span>
+        <span class="channel-legend-item"><span class="channel-dot" style="background:#0d9488"></span>양호 75~100</span>
       </div>
     </section>
   `;

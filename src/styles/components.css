@@ -821,10 +821,70 @@ input {
   line-height: 1.6;
 }
 
+/* === Score badge (compact triad: gauge arc + number + pill) === */
+.score-badge {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: end;
+  justify-items: center;
+  gap: 6px;
+  position: relative;
+  min-width: 120px;
+  padding: 6px 4px 0;
+}
+
+.score-badge-gauge {
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.05));
+}
+
+.score-badge-text {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.score-badge-num {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-badge-unit {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.score-badge-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
 /* === Score donut === */
 .donut-wrap {
   position: relative;
   flex-shrink: 0;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.06));
+}
+
+.donut-svg {
+  display: block;
 }
 
 .donut-label {
@@ -834,18 +894,26 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 .donut-score {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 900;
   line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
 }
 
 .donut-status {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 2px;
+  font-size: 10.5px;
+  font-weight: 700;
+  margin-top: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 /* === Group bars === */
@@ -903,15 +971,23 @@ input {
 .radar-wrap {
   display: flex;
   justify-content: center;
-  padding: 16px;
-  background: var(--panel);
+  align-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(ellipse at top, rgba(168, 85, 247, 0.04), transparent 60%),
+    linear-gradient(180deg, var(--panel), var(--panel));
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .radar-svg {
-  max-width: 100%;
+  width: 100%;
+  max-width: 360px;
   height: auto;
+  overflow: visible;
 }
 
 /* === Gauge chart === */
@@ -1137,7 +1213,7 @@ input {
 }
 
 .report-infographic .radar-svg {
-  max-width: 220px;
+  max-width: 280px;
 }
 
 /* Report channel mini bars */

@@ -1,6 +1,7 @@
 import { CHAPTERS } from "../../data/chapters.js";
 import { scoreColor, scoreLabel } from "../../utils/score.js";
 import { renderScoreDonut } from "../components/infographic/scoreDonut.js";
+import { renderScoreBadge } from "../components/infographic/scoreBadge.js";
 import { renderRadarChart } from "../components/infographic/radarChart.js";
 
 const CHAPTER_TYPE = {
@@ -147,7 +148,7 @@ export function renderReportPage(state, chapterMap) {
               <span class="report-type-badge">${typeLabel}</span>
             </div>
           </div>
-          ${renderScoreDonut(data.s, 72)}
+          ${renderScoreBadge(data.s)}
         </header>
 
         <p class="report-summary">${data.sum}</p>
@@ -240,8 +241,8 @@ export function renderReportPage(state, chapterMap) {
 }
 
 function getGrade(score) {
-  if (score >= 80) return { label: "A 등급", bg: "rgba(22,163,74,.12)", fg: "#16a34a" };
-  if (score >= 60) return { label: "B 등급", bg: "rgba(217,119,6,.12)", fg: "#d97706" };
-  if (score >= 40) return { label: "C 등급", bg: "rgba(234,88,12,.12)", fg: "#ea580c" };
-  return { label: "D 등급", bg: "rgba(220,38,38,.12)", fg: "#dc2626" };
+  if (score >= 80) return { label: "A 등급", bg: "rgba(13,148,136,.12)", fg: "#0d9488" };
+  if (score >= 60) return { label: "B 등급", bg: "rgba(139,92,246,.12)", fg: "#8b5cf6" };
+  if (score >= 40) return { label: "C 등급", bg: "rgba(236,72,153,.12)", fg: "#ec4899" };
+  return { label: "D 등급", bg: "rgba(190,18,60,.12)", fg: "#be123c" };
 }
