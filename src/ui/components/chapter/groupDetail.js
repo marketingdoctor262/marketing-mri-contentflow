@@ -17,7 +17,7 @@ export function renderGroupDetail(groups = [], isPaid = false) {
         <article class="item-row">
           <div>
             <div class="row gap-sm">
-              <span class="pill" style="border-color:${statusColor(item.st)};color:${statusColor(item.st)}">${item.st}</span>
+              <span class="pill pill-solid" style="background:${statusColor(item.st)};border-color:${statusColor(item.st)};color:#fff">${item.st}</span>
               <strong>${item.n}</strong>
             </div>
             <p>${item.tip}</p>

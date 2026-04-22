@@ -20,6 +20,8 @@ export const keywordsChapter = createChapter(
           { n: "기술 SEO 구조", s: 60, st: "보통", tip: "URL 구조 양호. robots.txt 확인됨. HTTPS 적용" },
           { n: "구조화 데이터(Schema markup)", s: 22, st: "위험", tip: "Schema 미적용. 리치 스니펫 노출 불가 — 클릭률 10~30% 손실 발생" },
           { n: "서치콘솔·서치어드바이저 등록", s: 35, st: "위험", tip: "구글 서치콘솔·네이버 서치어드바이저 등록 미확인. SEO 성과 데이터 수집 불가" },
+          { n: "Core Web Vitals 실측(LCP·INP·CLS)", s: 48, st: "취약", tip: "PageSpeed Insights API 실측 — LCP 5.8s·CLS 0.12 등 구글 SEO 순위 직결 지표. 2024년부터 INP가 FID 대체, 자동 수집·점수 반영" },
+          { n: "E-E-A-T 신호(저자·경험 표기)", s: 30, st: "위험", tip: "페이지 스캔으로 author·byline·전문가 bio 구조 감지. 구글 2024+ 알고리즘 핵심 — 저자 정보 없는 콘텐츠는 상위 노출 제한" },
         ],
       },
       {

@@ -20,9 +20,10 @@
   --brand-light: rgba(220, 38, 38, .08);
   --accent: #2563eb;
   --accent-soft: rgba(37, 99, 235, .08);
-  --ok: #16a34a;
-  --warn: #d97706;
-  --bad: #dc2626;
+  --ok: #0d9488;
+  --warn: #ec4899;
+  --bad: #be123c;
+  --neutral: #8b5cf6;
   --input-bg: #ffffff;
   --bar-bg: #e2e8f0;
   --soft-bg: #f1f5f9;
@@ -60,7 +61,7 @@
   --accent: #3b82f6;
   --accent-soft: rgba(59, 130, 246, .12);
   --ok: #22c55e;
-  --warn: #f59e0b;
+  --warn: #f472b6;
   --bad: #ef4444;
   --input-bg: #0f1219;
   --bar-bg: #252a3a;

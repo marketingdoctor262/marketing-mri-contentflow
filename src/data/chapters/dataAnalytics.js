@@ -11,6 +11,8 @@ export const dataAnalyticsChapter = createChapter(
           { n: "통계 분석툴 사용", s: 60, st: "보통", tip: "GA4 스크립트 설치 확인. 데이터 수집 중이나 고급 활용 미흡" },
           { n: "구글 UTM 사용", s: 42, st: "취약", tip: "일부 광고 링크에 UTM 파라미터 적용. 전체 채널 일관 적용 안됨" },
           { n: "GA4 전환설정 완성", s: 35, st: "위험", tip: "기본 이벤트만 수집 중. 문의·구매 전환 이벤트 미설정" },
+          { n: "서버사이드 트래킹(GTM Server)", s: 20, st: "위험", tip: "사이트 스크립트 스캔으로 GTM Server·Stape 등 서버 컨테이너 감지. 쿠키·애드블록 우회로 데이터 정확도 30%+ 향상" },
+          { n: "동의관리(CMP) 적용", s: 25, st: "위험", tip: "OneTrust·Cookiebot·Osano 등 CMP 스크립트 자동 감지. 개인정보보호법·GDPR 법적 리스크 + Consent Mode v2 광고 효율 직결" },
         ],
       },
       {
