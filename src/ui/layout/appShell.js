@@ -35,8 +35,12 @@ export function renderAppShell(state, chapterMap, bodyHtml) {
         </div>
         <button class="menu-btn" data-action="go-input">🏠 새 진단 시작</button>
         <button class="menu-btn ${state.main === "mri" && !state.ch ? "active" : ""}" data-action="go-mri">📊 정밀진단 대시보드</button>
-        <button class="menu-btn ${state.main === "report" ? "active" : ""}" data-action="go-report">📋 종합 보고서</button>
         <div class="menu-group">${chapterButtons}</div>
+        <button class="menu-btn ${state.main === "report" ? "active" : ""}" data-action="go-report">📋 종합 보고서</button>
+        <button class="menu-btn ${state.main === "history" ? "active" : ""}" data-action="go-history">📈 변화 추이 분석</button>
+        <button class="menu-btn ${state.main === "compete" ? "active" : ""}" data-action="go-compete">🆚 경쟁사 비교분석</button>
+        <button class="menu-btn ${state.main === "plan" ? "active" : ""}" data-action="go-plan">🎯 마케팅 실행 플랜</button>
+        <button class="menu-btn ${state.main === "ga4" ? "active" : ""}" data-action="go-ga4">📈 GA4 통계 분석</button>
         <button class="menu-btn ${state.main === "cf" ? "active" : ""}" data-action="go-cf">🔄 ContentFlow</button>
         <div class="menu-group">${flowButtons}</div>
         <div class="sidebar-footer">

@@ -1,9 +1,11 @@
 export const CONTENT_FLOW_MENU = [
   { id: "home", lb: "브랜드 홈", ic: "🏠" },
-  { id: "blog", lb: "블로그 연동", ic: "🔗" },
-  { id: "generate", lb: "콘텐츠 생성", ic: "✍" },
-  { id: "shortform", lb: "숏폼 자동생성", ic: "🎬" },
+  { id: "keywords", lb: "키워드 랩", ic: "🔍" },
   { id: "calendar", lb: "콘텐츠 캘린더", ic: "📅" },
+  { id: "generate", lb: "AI 초안 생성", ic: "✍" },
+  { id: "templates", lb: "카피 템플릿", ic: "📚" },
+  { id: "blog", lb: "블로그 연동", ic: "🔗" },
+  { id: "shortform", lb: "숏폼 자동생성", ic: "🎬" },
   { id: "archive", lb: "보관함", ic: "📦" },
 ];
 

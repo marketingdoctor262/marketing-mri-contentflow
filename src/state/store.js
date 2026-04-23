@@ -29,6 +29,35 @@ const state = {
 
   adsSnapshot: null,
   adsParseError: "",
+
+  competeBrand: "",
+  competeUrl: "",
+  competeLoading: false,
+  competeError: "",
+  competeSnapshot: null,
+
+  historyTick: 0,
+  autoDiagnoseEnabled: false,
+
+  // ContentFlow Phase 1
+  kwSeed: "",
+  calSeed: "",
+  calData: null,
+  draftType: "blog",
+  draftTopic: "",
+  draftKeyword: "",
+  draftTone: "friendly",
+  draftResult: null,
+  tplActiveId: "AIDA",
+  tplViewAll: false,
+  tplVars: {
+    product: "",
+    audience: "",
+    problem: "",
+    benefit: "",
+    outcome: "",
+    cta: "",
+  },
 };
 
 export const getState = () => ({

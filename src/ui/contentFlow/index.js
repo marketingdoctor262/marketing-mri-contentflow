@@ -5,6 +5,8 @@ import { renderCfShortform } from "./shortform.js";
 import { renderCfCalendar } from "./calendar.js";
 import { renderCfBlog } from "./blog.js";
 import { renderCfArchive } from "./archive.js";
+import { renderCfKeywords } from "./keywords.js";
+import { renderCfTemplates } from "./templates.js";
 
 export function renderContentFlowPage(state) {
   const tabs = CONTENT_FLOW_MENU.map(
@@ -17,20 +19,23 @@ export function renderContentFlowPage(state) {
       <header class="mri-page-head">
         <div>
           <h2>ContentFlow</h2>
-          <p class="mri-page-sub">콘텐츠 생성·숏폼·캘린더·블로그까지 한 화면에서 관리합니다.</p>
+          <p class="mri-page-sub">키워드 분석 → 캘린더 → AI 초안 → 카피 템플릿까지 마케팅 실행 전 과정.</p>
         </div>
       </header>
       <div class="row wrap">${tabs}</div>
-      <section class="card">${renderCurrent(state.cf)}</section>
+      <section class="card">${renderCurrent(state)}</section>
     </section>
   `;
 }
 
-function renderCurrent(id) {
+function renderCurrent(state) {
+  const id = state.cf;
   if (id === "home") return renderCfHome();
-  if (id === "generate") return renderCfGenerate();
+  if (id === "keywords") return renderCfKeywords(state);
+  if (id === "calendar") return renderCfCalendar(state);
+  if (id === "generate") return renderCfGenerate(state);
+  if (id === "templates") return renderCfTemplates(state);
   if (id === "shortform") return renderCfShortform();
-  if (id === "calendar") return renderCfCalendar();
   if (id === "blog") return renderCfBlog();
   return renderCfArchive();
 }
